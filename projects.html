@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="body-content">
+        <header>
+            <h1>Ash Shen Fu</h1>
+            <p>My online resume</p>
+        </header>
+        <div class="wrapper">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <main class="standardmain">
+                <h2>Projects</h2>
+                <br><br>
+                <div class="calc-content">
+                    <h3>Calculator</h3>
+                    <div id="inputs">
+                        <input type="text" id="first-num">
+                        <input type="text" id="second-num">
+                    </div>
+                    <div id="operations">
+                        <button onclick="addition()">+</button>
+                        <button onclick="subtraction()">-</button>
+                        <button onclick="multiplication()">*</button>
+                    </div>
+                    <div id="operations2">
+                        <button onclick="division()">/</button>
+                        <button onclick="exponentiation()">**</button>
+                        <button onclick="calc_clear()">clear</button>
+                    </div>
+                    <br><br>
+                    <h3 id="output"></h3>
+                </div>
+            </main>
+        </div>
+        <footer>
+            <p>All Rights Reserved by Ash Fu. <a href="">Credits</a>. (&#169)</p>
+        </footer>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
