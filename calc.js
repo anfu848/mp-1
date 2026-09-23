@@ -3,6 +3,11 @@ function addition() {
     let second = Number(document.getElementById("second-num").value);
     let result = first + second;
     document.getElementById("output").innerHTML = String(result);
+    if (result < 0) {
+        document.getElementById("output").style.color = "red";
+    } else {
+        document.getElementById("output").style.color = "black";
+    }
 }
 
 function subtraction() {
